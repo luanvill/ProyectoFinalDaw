@@ -1,0 +1,40 @@
+<nav class="navbar navbar-dark navbar-expand-lg navbar-scrolled border-bottom">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <div class="logoOFF" id="logo"></div>
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" [ngClass]="{ 'show': navbarOpen }">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                <li class="nav-item">
+                  <a id ="step1" class="btn btn-link" routerLink="/" >Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a id ="step2" class="btn btn-link" routerLink="/noticias">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a id ="step3" class="btn btn-link" routerLink="/quehacemos">¿Qué hacemos?</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a id ="step4" class="btn btn-link" routerLink="/contacto">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                  <a id ="step5" class="btn btn-link" href="https://proyectodaw20l9.stackblitz.io" >Panel</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/buscador" class="btn btn-link">
+                    <h3><fa-icon [icon]="faSearchengin"></fa-icon></h3>
+                  </a>
+                </li>
+                
+              </ul>
+          
+      </div>
+    </div>
+  </nav>
